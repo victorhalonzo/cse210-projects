@@ -6,9 +6,9 @@ public class Entry
 
     public void Display()
     {
-        Console.WriteLine($"Fecha: {_date}");
-        Console.WriteLine($"Pregunta: {_prompt}");
-        Console.WriteLine($"Respuesta: {_input}");
+        Console.Write($"Date: {_date} - ");
+        Console.WriteLine($"Prompt: {_prompt}");
+        Console.WriteLine($"{_input}");
         Console.WriteLine(new string('-', 20)); // Dibuja una línea para separar entradas
     }
 }
