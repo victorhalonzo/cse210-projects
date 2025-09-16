@@ -29,10 +29,9 @@ public class Journal
     {
         using (StreamWriter sw = new StreamWriter(file))
         {
-            // Escribir cabecera
+            
             sw.WriteLine("Date|Prompt|Input");
 
-            // Escribir filas
             foreach (var p in _entries)
             {
                 sw.WriteLine($"{p._date}|{p._prompt}|{p._input}");
